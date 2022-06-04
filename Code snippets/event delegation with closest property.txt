@@ -1,0 +1,10 @@
+elements.searchResPages.addEventListener('click', e =>{
+    const btn = e.target.closest('.btn-inline');
+    if(btn){
+        const gotoPage = parseInt(btn.dataset.goto, 10); //10 is written to specify we are in base 10 not in binary (2) , this is optional
+        searchView.clearSearchRes();
+        searchView.renderResults(state.search.result,gotoPage);
+        console.log(gotoPage);
+        
+    }
+});

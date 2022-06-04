@@ -1,0 +1,2 @@
+// [2,4,8] --> splice(1,1) --> returns [4] -->origional array [2,8]
+// [2,4,8] --> slice(1,2) --> returns [4] -->origional array [2,4,8]

@@ -1,0 +1,19 @@
+const elements={
+recipe:document.querySelector('.recipe')
+}
+
+elements.recipe.addEventListener('click', e =>{
+    if (e.target.matches('.btn-decrease , .btn-decrease *')){
+        // Decrease button is clicked
+        if(state.recipe.servings>1){
+            state.recipe.updateServings('dec');
+            recipeView.updateServingsIngredients(state.recipe);
+        }
+    } else if (e.target.matches('.btn-increase , .btn-increase *')){
+        // increase button is clicked
+        state.recipe.updateServings('inc');
+        recipeView.updateServingsIngredients(state.recipe);
+    } else if(e.target.matches('.recipe__btn--add, .recipe__btn--add *')){
+        controlList();
+    }
+});

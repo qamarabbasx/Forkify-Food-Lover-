@@ -1,0 +1,13 @@
+const limitRecipeTitle= (title,limit=17) => {
+    const newTitle=[];
+    if(title.length>limit){
+        title.split(' ').reduce((prev,cur) => {
+            if(prev + cur.length <= limit){
+                newTitle.push(cur);
+            }
+            return prev+cur.length;
+        },0);
+        return `${newTitle.join(' ')} ...`;
+    }
+    return title;
+};

@@ -1,0 +1,76 @@
+C:\Users\lykda>node -v
+C:\Users\lykda>npm -v
+// to move one folder back
+C:\Users\lykda>cd..
+C:\Users>
+
+// start writing name of file and hit tab button it will auto complete or suggest available related lists
+E:\>cd E(press tab it will automaticali complete to ECOM)
+
+// To clear press cls
+
+//mkdir test is used to create a folder named test
+// copy NUL test.js is used to create a file named test.js
+// copy test.js .. is used to copy test.js to parent folder
+// move test.js .. is used to move test.js to parent folder
+// del test.js is used to delete test.js.
+// rmdir/s test .. is used to delete test folder
+//start test.js is used to open the file 
+
+// to change the drive
+C:\>E:
+
+// to move one folder up
+E:\>cd ECOM
+
+//in the project directory initialize npm
+E:\My Projects\JavaScript\complete-javascript-course-1\9-forkify\starter>npm init
+
+// dir is used to check the lists in directory
+E:\My Projects\JavaScript\complete-javascript-course-1\9-forkify\starter>dir
+
+// install webpack as developer dependency
+E:\My Projects\JavaScript\complete-javascript-course-1\9-forkify\starter>npm install webpack --save-dev
+
+//install jquery as dependency
+E:\My Projects\JavaScript\complete-javascript-course-1\9-forkify\starter>npm install jquery --save
+
+//un-install jquery if dont need it anymore
+E:\My Projects\JavaScript\complete-javascript-course-1\9-forkify\starter>npm uninstall jquery --save
+
+// if someone has shared project we will simply run npm install it will install dependencies locally
+E:\My Projects\JavaScript\complete-javascript-course-1\9-forkify\starter>npm install
+
+// we can also install global dependencies to access from anywhere inside your computer
+E:\My Projects\JavaScript\complete-javascript-course-1\9-forkify\starter>npm install live-server --global
+or
+E:\My Projects\JavaScript\complete-javascript-course-1\9-forkify\starter>npm install live-server -g
+
+//install webpack-cli also as dev dependency
+PS E:\My Projects\JavaScript\complete-javascript-course-1\9-forkify\starter> npm install webpack-cli --save-dev
+
+// to run use this
+PS E:\My Projects\JavaScript\complete-javascript-course-1\9-forkify\starter> 
+npm run dev
+or
+npm run build
+
+//to install webpack dev server
+PS E:\My Projects\JavaScript\complete-javascript-course-1\9-forkify\starter> npm install webpack-dev-server --save-devs
+
+//toinstall html webpack plugin
+npm install html-webpack-plugin --save-dev
+
+//install babel
+// install multiple applications in one singal line(3 in below example)
+npm install babel-core babel-preset-env babel-loader --save-dev
+
+//when we use babel to downgrade our code to previous versions like from ES6 to ES5 some features can not be converted because they were not present in the the ES5
+// for this purpose we use polyfill , and it is not developer dependency so it is saved in general dependencies.
+npm install babel-polyfill --save
+
+// to install fractional --> it returns numerator and denominator of a decimal
+npm install fractional --save
+
+// to install uniqid
+npm install uniqid --save
